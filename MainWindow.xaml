@@ -1,0 +1,132 @@
+﻿<Window x:Name="MainWindow1" x:Class="CiselneSoustavy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Číselné soustavy" Height="262" Width="316" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Initialized="MainWindow1_Initialized">
+    <Grid Background="#FFE5E5E5">
+        <TextBox x:Name="EFromSystemNumber1" HorizontalAlignment="Left" Height="23" Margin="26,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" TabIndex="1"  TextChanged="ESystemNumber_TextChanged"/>
+        <TextBox x:Name="EFromSystemNumber2" HorizontalAlignment="Left" Height="23" Margin="26,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" TabIndex="2" TextChanged="ESystemNumber_TextChanged" />
+        <ComboBox x:Name="CBFromSystem1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="26,32,0,0" SelectedIndex="8" TabIndex="3" DropDownClosed="CBFromSystem_DropDownClosed" Height="22">
+            <ListBoxItem Content="2 (0-1)"/>
+            <ListBoxItem Content="3 (0-2)"/>
+            <ListBoxItem Content="4 (0-3)"/>
+            <ListBoxItem Content="5 (0-4)"/>
+            <ListBoxItem Content="6 (0-5)"/>
+            <ListBoxItem Content="7 (0-6)"/>
+            <ListBoxItem Content="8 (0-7)"/>
+            <ListBoxItem Content="9 (0-8)"/>
+            <ListBoxItem Content="10 (0-9)"/>
+            <ListBoxItem Content="11 (0-A)"/>
+            <ListBoxItem Content="12 (0-B)"/>
+            <ListBoxItem Content="13 (0-C)"/>
+            <ListBoxItem Content="14 (0-D)"/>
+            <ListBoxItem Content="15 (0-E)"/>
+            <ListBoxItem Content="16 (0-F)"/>
+            <ListBoxItem Content="17 (0-G)"/>
+            <ListBoxItem Content="18 (0-H)"/>
+            <ListBoxItem Content="19 (0-I)"/>
+            <ListBoxItem Content="20 (0-J)"/>
+            <ListBoxItem Content="21 (0-K)"/>
+            <ListBoxItem Content="22 (0-L)"/>
+            <ListBoxItem Content="23 (0-M)"/>
+            <ListBoxItem Content="24 (0-N)"/>
+            <ListBoxItem Content="25 (0-O)"/>
+            <ListBoxItem Content="26 (0-P)"/>
+            <ListBoxItem Content="27 (0-Q)"/>
+            <ListBoxItem Content="28 (0-R)"/>
+            <ListBoxItem Content="29 (0-S)"/>
+            <ListBoxItem Content="30 (0-T)"/>
+            <ListBoxItem Content="31 (0-U)"/>
+            <ListBoxItem Content="32 (0-V)"/>
+            <ListBoxItem Content="33 (0-W)"/>
+            <ListBoxItem Content="34 (0-X)"/>
+            <ListBoxItem Content="35 (0-Y)"/>
+            <ListBoxItem Content="36 (0-Z)"/>
+        </ComboBox>
+        <ComboBox x:Name="CBFromSystem2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="26,88,0,0" SelectedIndex="8" TabIndex="3" DropDownClosed="CBToSystem_DropDownClosed" Height="22">
+            <ListBoxItem Content="2 (0-1)"/>
+            <ListBoxItem Content="3 (0-2)"/>
+            <ListBoxItem Content="4 (0-3)"/>
+            <ListBoxItem Content="5 (0-4)"/>
+            <ListBoxItem Content="6 (0-5)"/>
+            <ListBoxItem Content="7 (0-6)"/>
+            <ListBoxItem Content="8 (0-7)"/>
+            <ListBoxItem Content="9 (0-8)"/>
+            <ListBoxItem Content="10 (0-9)"/>
+            <ListBoxItem Content="11 (0-A)"/>
+            <ListBoxItem Content="12 (0-B)"/>
+            <ListBoxItem Content="13 (0-C)"/>
+            <ListBoxItem Content="14 (0-D)"/>
+            <ListBoxItem Content="15 (0-E)"/>
+            <ListBoxItem Content="16 (0-F)"/>
+            <ListBoxItem Content="17 (0-G)"/>
+            <ListBoxItem Content="18 (0-H)"/>
+            <ListBoxItem Content="19 (0-I)"/>
+            <ListBoxItem Content="20 (0-J)"/>
+            <ListBoxItem Content="21 (0-K)"/>
+            <ListBoxItem Content="22 (0-L)"/>
+            <ListBoxItem Content="23 (0-M)"/>
+            <ListBoxItem Content="24 (0-N)"/>
+            <ListBoxItem Content="25 (0-O)"/>
+            <ListBoxItem Content="26 (0-P)"/>
+            <ListBoxItem Content="27 (0-Q)"/>
+            <ListBoxItem Content="28 (0-R)"/>
+            <ListBoxItem Content="29 (0-S)"/>
+            <ListBoxItem Content="30 (0-T)"/>
+            <ListBoxItem Content="31 (0-U)"/>
+            <ListBoxItem Content="32 (0-V)"/>
+            <ListBoxItem Content="33 (0-W)"/>
+            <ListBoxItem Content="34 (0-X)"/>
+            <ListBoxItem Content="35 (0-Y)"/>
+            <ListBoxItem Content="36 (0-Z)"/>
+        </ComboBox>
+        <TextBox x:Name="EToSystemNumber" HorizontalAlignment="Left" Height="23" Margin="26,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" TabIndex="2"  />
+        <ComboBox x:Name="CBToSystem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="26,143,0,0" SelectedIndex="8" TabIndex="3" DropDownClosed="CBToSystem_DropDownClosed" Height="22" RenderTransformOrigin="0.5,0.773">
+            <ListBoxItem Content="2 (0-1)"/>
+            <ListBoxItem Content="3 (0-2)"/>
+            <ListBoxItem Content="4 (0-3)"/>
+            <ListBoxItem Content="5 (0-4)"/>
+            <ListBoxItem Content="6 (0-5)"/>
+            <ListBoxItem Content="7 (0-6)"/>
+            <ListBoxItem Content="8 (0-7)"/>
+            <ListBoxItem Content="9 (0-8)"/>
+            <ListBoxItem Content="10 (0-9)"/>
+            <ListBoxItem Content="11 (0-A)"/>
+            <ListBoxItem Content="12 (0-B)"/>
+            <ListBoxItem Content="13 (0-C)"/>
+            <ListBoxItem Content="14 (0-D)"/>
+            <ListBoxItem Content="15 (0-E)"/>
+            <ListBoxItem Content="16 (0-F)"/>
+            <ListBoxItem Content="17 (0-G)"/>
+            <ListBoxItem Content="18 (0-H)"/>
+            <ListBoxItem Content="19 (0-I)"/>
+            <ListBoxItem Content="20 (0-J)"/>
+            <ListBoxItem Content="21 (0-K)"/>
+            <ListBoxItem Content="22 (0-L)"/>
+            <ListBoxItem Content="23 (0-M)"/>
+            <ListBoxItem Content="24 (0-N)"/>
+            <ListBoxItem Content="25 (0-O)"/>
+            <ListBoxItem Content="26 (0-P)"/>
+            <ListBoxItem Content="27 (0-Q)"/>
+            <ListBoxItem Content="28 (0-R)"/>
+            <ListBoxItem Content="29 (0-S)"/>
+            <ListBoxItem Content="30 (0-T)"/>
+            <ListBoxItem Content="31 (0-U)"/>
+            <ListBoxItem Content="32 (0-V)"/>
+            <ListBoxItem Content="33 (0-W)"/>
+            <ListBoxItem Content="34 (0-X)"/>
+            <ListBoxItem Content="35 (0-Y)"/>
+            <ListBoxItem Content="36 (0-Z)"/>
+        </ComboBox>
+        <ComboBox x:Name="CBOperation" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="165,32,0,0" SelectedIndex="0" DropDownClosed="CBOperation_DropDownClosed" Height="22">
+            <ListBoxItem Content="Konverze"/>
+            <ListBoxItem Content="Součet"/>
+            <ListBoxItem Content="Rozdíl"/>
+            <ListBoxItem Content="Součin"/>
+            <ListBoxItem Content="Podíl (celočíselný)"/>
+            <ListBoxItem Content="Modulo (zbytek po dělení)"/>
+            <ListBoxItem Content="Mocnina"/>
+        </ComboBox>
+        <TextBlock x:Name="LOperace" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Operace:" VerticalAlignment="Top" Margin="108,35,0,0" Height="16" Width="52"/>
+
+    </Grid>
+</Window>
